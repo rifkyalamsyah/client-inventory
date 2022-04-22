@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/extreme_admin_lite/') ?>images/favicon.png">
-    <title>Xtreme Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Responsi PWL</title>
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/extreme_admin_lite/') ?>css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -127,8 +127,8 @@
                                 <div class="user-pic"><img src="<?= base_url('assets/extreme_admin_lite/') ?>images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
                                 <div class="user-content hide-menu m-l-10">
                                     <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <h5 class="m-b-0 user-name font-medium">Steave Jobs <i class="fa fa-angle-down"></i></h5>
-                                        <span class="op-5 user-email">varun@gmail.com</span>
+                                        <h5 class="m-b-0 user-name font-medium">Rifky Alamsyah <i class="fa fa-angle-down"></i></h5>
+                                        <span class="op-5 user-email">19.01.4351</span>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">
                                         <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
@@ -145,15 +145,15 @@
                         </li>
                         <li class="p-15 m-t-10"><a href="javascript:void(0)" class="btn btn-block create-btn text-white no-block d-flex align-items-center"><i class="fa fa-plus-square"></i> <span class="hide-menu m-l-5">Create New</span> </a></li>
                         <!-- User Profile-->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Profile</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Table</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icon</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="starter-kit.html" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Blank</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="error-404.html" aria-expanded="false"><i class="mdi mdi-alert-outline"></i><span class="hide-menu">404</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="loadMenu('<?= base_url('barang')?>')" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Barang</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="loadMenu('<?= base_url('departemen')?>')" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Departemen</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" onclick="loadMenu('<?= base_url('pengadaan')?>')" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Pengadaan</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icon</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Blank</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-alert-outline"></i><span class="hide-menu">404</span></a></li> 
                         <li class="text-center p-40 upgrade-btn">
                             <a href="https://wrappixel.com/templates/xtremeadmin/" class="btn btn-block btn-danger text-white" target="_blank">Upgrade to Pro</a>
-                        </li>
+                        </li>-->
                     </ul>
                     
                 </nav>
@@ -175,19 +175,6 @@
                 <div class="row align-items-center">
                     <div class="col-5">
                         <h4 class="page-title">Starter Page</h4>
-                        <div class="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="text-right upgrade-btn">
-                            <a href="https://wrappixel.com/templates/xtremeadmin/" class="btn btn-danger text-white" target="_blank">Upgrade to Pro</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -204,8 +191,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body">
-                                This is some text within a card block.
+                            <div class="card-body" id="kontenTemplate">
+                                
                             </div>
                         </div>
                     </div>
@@ -255,6 +242,25 @@
     <script src="<?= base_url('assets/extreme_admin_lite/') ?>js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="<?= base_url('assets/extreme_admin_lite/') ?>js/custom.js"></script>
+
+    <!-- AJAX -->
+    <script type="text/javascript">
+        function loadMenu(url) {
+            $.ajax(url, {
+                type: 'GET',
+                success: function(data, status, xhr){
+                    var objData = JSON.parse(data);
+
+                    $('#kontenTemplate').html(objData.konten);
+                    $('title').html(objData.title);
+                    $('.page-breadcrumb .page-title').html(objData.title);
+                },
+                error: function (jqXHR, textStatus, errorMsg){
+                    alert('Error : ' + errorMsg);
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>
