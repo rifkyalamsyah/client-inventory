@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/extreme_admin_lite/') ?>images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/favicon.png">
     <title>Responsi PWL</title>
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/extreme_admin_lite/') ?>css/style.min.css" rel="stylesheet">
@@ -50,17 +50,17 @@
                         <b class="logo-icon">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="<?= base_url('assets/extreme_admin_lite/') ?>images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo icon -->
-                            <img src="<?= base_url('assets/extreme_admin_lite/') ?>images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span class="logo-text">
                              <!-- dark Logo text -->
-                             <img src="<?= base_url('assets/extreme_admin_lite/') ?>images/logo-text.png" alt="homepage" class="dark-logo" />
+                             <img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                              <!-- Light Logo text -->    
-                             <img src="<?= base_url('assets/extreme_admin_lite/') ?>images/logo-light-text.png" class="light-logo" alt="homepage" />
+                             <img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -94,7 +94,7 @@
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?= base_url('assets/extreme_admin_lite/') ?>images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/users/5.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
@@ -124,7 +124,7 @@
                         <li>
                             <!-- User Profile-->
                             <div class="user-profile d-flex no-block dropdown m-t-20">
-                                <div class="user-pic"><img src="<?= base_url('assets/extreme_admin_lite/') ?>images/users/1.jpg" alt="users" class="rounded-circle" width="40" /></div>
+                                <div class="user-pic"><img src="<?= base_url('assets/extreme_admin_lite/') ?>assets/images/users/5.jpg" alt="users" class="rounded-circle" width="40" /></div>
                                 <div class="user-content hide-menu m-l-10">
                                     <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <h5 class="m-b-0 user-name font-medium">Rifky Alamsyah <i class="fa fa-angle-down"></i></h5>
@@ -192,7 +192,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body" id="kontenTemplate">
-                                
+                                Dashboard
                             </div>
                         </div>
                     </div>
@@ -231,10 +231,10 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="<?= base_url('assets/extreme_admin_lite/') ?>libs/jquery/dist/jquery.min.js"></script>
+    <script src="<?= base_url('assets/extreme_admin_lite/') ?>assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="<?= base_url('assets/extreme_admin_lite/') ?>libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="<?= base_url('assets/extreme_admin_lite/') ?>libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?= base_url('assets/extreme_admin_lite/') ?>assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="<?= base_url('assets/extreme_admin_lite/') ?>assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?= base_url('assets/extreme_admin_lite/') ?>js/app-style-switcher.js"></script>
     <!--Wave Effects -->
     <script src="<?= base_url('assets/extreme_admin_lite/') ?>js/waves.js"></script>
@@ -252,8 +252,8 @@
                     var objData = JSON.parse(data);
 
                     $('#kontenTemplate').html(objData.konten);
-                    $('title').html(objData.title);
-                    $('.page-breadcrumb .page-title').html(objData.title);
+                    $('title').html(objData.titel);
+                    $('.page-breadcrumb .page-title').html(objData.titel);
                 },
                 error: function (jqXHR, textStatus, errorMsg){
                     alert('Error : ' + errorMsg);
