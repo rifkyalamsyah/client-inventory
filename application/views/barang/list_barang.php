@@ -27,5 +27,5 @@
 		})
 	}
 
-	loadKonten('http://localhost/backend_inventory/index.php/barang/list_barang');
+	loadKonten('http://localhost/backend_inventory/barang/list_barang');
 </script>
