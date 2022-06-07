@@ -1,5 +1,6 @@
 <div class="row">
 	<div class="col-12">
+		<h4>List Data Barang</h4><br>
 		<div class="card">
 			<div class="card-body">
 				<h4>Dibawah Ini Adalah Data Barang</h4>
@@ -15,7 +16,7 @@
 	function loadKonten(url) {
 		$.ajax(url, {
 			type: 'GET',
-			sucsess: function(data, status, xhr) {
+			success: function(data, status, xhr) {
 				var objData = JSON.parse(data);
 
 				$('#tabel_barang').html(objData.konten);
@@ -23,8 +24,8 @@
 			error: function(jqXHR, textStatus, errorMsg) {
 				alert('Error: ' + errorMsg);
 			}
-		});
+		})
 	}
 
-	loadKonten('http://localhost/backend_inventory/barang/list_barang');
+	loadKonten('http://localhost/backend_inventory/index.php/barang/list_barang');
 </script>
