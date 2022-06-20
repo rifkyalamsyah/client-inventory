@@ -13,15 +13,19 @@
 					<div class="form-group">
 						<label class="col-md-12">Deskripsi</label>
 						<div class="col-md-12">
-							<textarea rows="5" class="form-control form-control-line form-user-input" name="deskripsi" id="deskripsi" placeholder="Ceritakan barang"></textarea>
+							<textarea rows="5" class="form-control form-control-line form-user-input" name="deskripsi" id="deskripsi" placeholder="Deskripsi barang"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-12">
 							<input class="form-user-input" type="hidden" name="id_barang" id="id_barang" value="">
-							<input class="form-user-input" type="hidden" name="stok" id="stok" value="0">
-							<button class="btn btn-success" type="submit">Simpan Data Barang</button>
+
+							<label class="col-md-12">Stok</label>
+							<input class="form-control form-control-line form-user-input" type="number" name="stok" id="stok" value="" placeholder="Jumlah Stok">
 						</div>
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-success" type="submit">Simpan Data Barang</button>
 					</div>
 				</form>
 			</div>
@@ -38,11 +42,11 @@
 
 	function sendDataPost() {
 		<?php
-			if ($title == 'Form Edit Data Barang') {
-				echo "var link = 'http://localhost/backend_inventory/barang/update_action/';";
-			} else {
-				echo "var link = 'http://localhost/backend_inventory/barang/create_action/';";
-			}
+		if ($title == 'Form Edit Data Barang') {
+			echo "var link = 'http://localhost/backend_inventory/barang/update_action/';";
+		} else {
+			echo "var link = 'http://localhost/backend_inventory/barang/create_action/';";
+		}
 		?>
 
 		var dataForm = {};
@@ -92,8 +96,8 @@
 	}
 
 	<?php
-		if ($title == 'Form Edit Data Barang') {
-			echo 'getDetail(' . $id_barang . ');';
-		}
+	if ($title == 'Form Edit Data Barang') {
+		echo 'getDetail(' . $id_barang . ');';
+	}
 	?>
 </script>
