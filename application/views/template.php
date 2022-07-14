@@ -215,7 +215,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                All Rights Reserved by Xtreme Admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+                All Rights Reserved by Xtreme Admin. Designed and Developed by <a href="https://instagram.com/rifkyyalamsyah">Rifky Alamsyah - 19.01.4351</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

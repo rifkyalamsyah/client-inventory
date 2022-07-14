@@ -71,10 +71,10 @@
 
 	function hapusData(id_barang) {
 		// Hard Delete
-		// var url = 'http://localhost/backend_inventory/barang/delete_data?id_barang=' + id_barang;
+		var url = 'http://localhost/backend_inventory/barang/delete_data?id_barang=' + id_barang;
 
 		// Soft Delete
-		var url = 'http://localhost/backend_inventory/barang/soft_delete_data?id_barang=' + id_barang;
+		// var url = 'http://localhost/backend_inventory/barang/soft_delete_data?id_barang=' + id_barang;
 
 		$.ajax(url, {
 			type: 'GET',
