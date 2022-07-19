@@ -49,13 +49,13 @@
 					<div class="form-group">
 						<label class="col-md-12">Nama Barang</label>
 						<div class="col-md-12">
-							<input type="text" placeholder="Inputkan nama barang" class="form-control form-control-line form-user-input" name="nama_barang" id="nama_barang">
+							<input type="text" placeholder="Inputkan nama barang" class="form-control form-control-line form-user-input" name="nama_barang" id="nama_barang" required>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-md-12">Deskripsi</label>
 						<div class="col-md-12">
-							<textarea rows="5" class="form-control form-control-line form-user-input" name="deskripsi" id="deskripsi" placeholder="Deskripsi barang"></textarea>
+							<textarea rows="5" class="form-control form-control-line form-user-input" name="deskripsi" id="deskripsi" placeholder="Deskripsi barang" required></textarea>
 						</div>
 					</div>
 					<div class="form-group">
